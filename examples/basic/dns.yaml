@@ -24,3 +24,10 @@ bind:
     ip: "172.16.0.5"
     name: storage2
     ttl: 300
+
+cname:
+  read:
+    domain: "bmrf.io"
+    name: "read"
+    cname: "monitor.bmrf.io"
+    ttl: 300

@@ -28,3 +28,20 @@ variable "dns_server" {
   type        = string
   description = "(Required) IP or FQDN of the DNS server"
 }
+
+variable "cname_configuration" {
+  type = map(object({
+    domain = string
+    name   = string
+    cname  = string
+    ttl    = number
+  }))
+  description = "(Optional) Map containing the configuration for the CNAME entries"
+  default     = null
+}
+
+variable "create_cnames" {
+  type        = bool
+  description = "(Optional) Map containing the configuration for the CNAME entries"
+  default     = false
+}

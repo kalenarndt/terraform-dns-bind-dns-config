@@ -14,3 +14,10 @@ resource "dns_ptr_record" "ptr-record" {
   ttl      = each.value.ttl
 }
 
+resource "dns_cname_record" "cname-record" {
+  for_each = var.create_cnames ? var.cname_configuration : {}
+  zone     = "${each.value.domain}."
+  name     = each.value.name
+  cname    = "${each.value.cname}."
+  ttl      = each.value.ttl
+}
