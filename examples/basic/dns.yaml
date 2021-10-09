@@ -1,0 +1,26 @@
+bind:
+  vcenter:
+    domain: bmrf.io
+    ip: "172.16.11.20"
+    name: vc
+    ttl: 300
+  esxi1:
+    domain: bmrf.io
+    ip: "172.16.11.11"
+    name: esxi1
+    ttl: 300
+  esxi2:
+    domain: bmrf.io
+    ip: "172.16.11.12"
+    name: esxi2
+    ttl: 300
+  storage1:
+    domain: bmrf.io
+    ip: "172.16.0.4"
+    name: storage1
+    ttl: 300
+  storage2:
+    domain: bmrf.io
+    ip: "172.16.0.5"
+    name: storage2
+    ttl: 300
