@@ -1,0 +1,4 @@
+key_algorithm       = "hmac-sha256"
+key_name            = "external-dns."
+key_secret          = "fbhdODaDDqrvv2iR3aNN8X9ut15IOGkEBjHgbamJUrw="
+dns_server          = "ns.bmrf.io"

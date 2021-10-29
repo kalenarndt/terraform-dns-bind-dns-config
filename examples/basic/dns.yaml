@@ -1,28 +1,38 @@
 bind:
-  vcenter:
-    domain: bmrf.io
-    ip: "172.16.11.20"
-    name: vc
+  consul01:
+    domain: cts.cdw.local
+    ip: "172.23.200.11"
+    name: consul01
     ttl: 300
-  esxi1:
-    domain: bmrf.io
-    ip: "172.16.11.11"
-    name: esxi1
+  consul02:
+    domain: cts.cdw.local
+    ip: "172.23.200.12"
+    name: consul02
     ttl: 300
-  esxi2:
-    domain: bmrf.io
-    ip: "172.16.11.12"
+  consul03:
+    domain: cts.cdw.local
+    ip: "172.23.200.13"
     name: esxi2
     ttl: 300
-  storage1:
-    domain: bmrf.io
-    ip: "172.16.0.4"
-    name: storage1
+  cts01:
+    domain: cts.cdw.local
+    ip: "172.23.200.7"
+    name: ct01
     ttl: 300
-  storage2:
-    domain: bmrf.io
-    ip: "172.16.0.5"
-    name: storage2
+  vault01:
+    domain: cts.cdw.local
+    ip: "172.23.200.3"
+    name: vault01
+    ttl: 300
+  vault02:
+    domain: cts.cdw.local
+    ip: "172.23.200.4"
+    name: vault02
+    ttl: 300
+  vault03:
+    domain: cts.cdw.local
+    ip: "172.23.200.5"
+    name: vault02
     ttl: 300
 
 cname:
