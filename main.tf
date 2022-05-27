@@ -8,7 +8,7 @@ resource "dns_a_record_set" "a-record" {
 
 resource "dns_ptr_record" "ptr-record" {
   for_each = var.dns_configuration
-  zone     = "${join(".", slice(reverse(split(".", each.value.ip)), 1, 4))}.in-addr.arpa."
+  zone     = "${join(".", slice(reverse(split(".", each.value.ip)), 2, 4))}.in-addr.arpa."
   name     = element(split(".", each.value.ip), 2)
   ptr      = "${each.value.name}.${each.value.domain}."
   ttl      = each.value.ttl
